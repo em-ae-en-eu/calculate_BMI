@@ -1,5 +1,3 @@
-
-
 let weight = parseFloat(prompt('Enter your weight in KG'));
 let height = parseInt(prompt('Enter your height in cm'));
 
@@ -54,4 +52,23 @@ while(true){
 
 }
 
+
+
+
+//FIND THE PRIME NUMBERS BETWEEN 2 TO N.
+
+
+
+
+let inputNum = prompt("enter a number to find its primes");
+
+
+for(let n = 2 ; n < inputNum ; n++){
+    let isPrime = true;
+    for(let i = 2; i <n ; i++){
+        if(n%i === 0){
+            isPrime = false;
+        }
+    }if(isPrime) console.log(n);
+}
 
